@@ -21,7 +21,9 @@ n = int(input("enter a number : "))
 #         print("\n")
 #     print(i," ", end = '') 
 
-# count=0
+# ============================
+
+# count=0                       
 # for i in range(n):
 #     for j in range(n):
 #         count+=1
@@ -34,15 +36,16 @@ n = int(input("enter a number : "))
 #         count-=1
 #         print(count," ",end = "")
 #     print('')
+# ======================================
 
 # for i in range(n):
 #     for j in range(i+1):
-#         print("*",end="")
+#         print("*",end = " ")
 #     print('')
 
 for i in range(n):
     for j in range(n,i,-1):
-        print("*",end="")
+        print('*',end="")
     print('')
 
 
