@@ -1,0 +1,62 @@
+*{
+    text-align: center;
+    padding: 0;
+    margin:0;
+    background: rgb(187, 182, 184);
+    align-items: center;
+}
+h1{
+    /* border:1px solid black; */
+    padding:30px 0px;
+    width: 100%;
+    background: rgb(80, 238, 80);
+}
+.intro,.sec1-right-box{
+    display: inline-block;
+}
+.intro,.hero,.call1,.fea,.more,.call2{
+    /* border:1px solid black; */
+    margin: 10px;
+    background: rgb(81, 221, 81);
+}
+.more,.call2{
+    display: inline-block;  
+}
+.intro{
+    vertical-align: top;
+    padding:107px 2px;
+    margin-left:2px;
+}
+.intro,.more{
+    width:59%;
+}
+.fea{
+    padding:43px 0px;
+    width: 98%;
+    margin:0px 10px 0px 8px;
+}
+.sec1-right-box{
+    width:38%;
+    margin-left: 2px;
+}
+.hero{
+    padding:75px 0px;
+}
+.call1{
+    padding:17px 0px;
+    margin-top: 5px;
+    background-color: rgb(189, 236, 18);
+}
+.more{
+    margin:0px 0px 0px 1px;
+    padding:25px 0px;
+}
+.call2{
+    padding:25px 195px;
+    margin-left: 18px;
+    background-color: rgb(189, 236, 18);
+}
+
+
+
+

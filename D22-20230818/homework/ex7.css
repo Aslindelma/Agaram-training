@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+div{
+    border: 2px solid black;
+}
+header{
+    background: palevioletred;
+    padding: 40px;
+}
+nav{
+    background: rgb(90, 3, 90);
+    color: antiquewhite;
+    padding: 20px;
+}
+main{
+    padding:194px;
+}
+footer{
+    background-color: rgb(159, 75, 238);
+    padding: 40px;
+}

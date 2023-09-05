@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+header,footer{
+    border:1px solid black;
+    padding:20px;
+}
+nav{
+    border:1px solid black;
+    padding:25px;
+}
+section{
+    border:1px solid black;
+}
+.d1,.d2,.d3,.d4{
+    border:1px solid black;
+    padding:60px 297px;
+    margin:4px 0px 4px 4px;
+}
+.d1,.d2{
+    display: inline-block;
+    margin-bottom: 1px;  
+}
+.d3,.d4{
+    display: inline-block;
+}
+.d1,.d2,.d3,.d4{
+    margin-left: -1px;
+}
+

@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+header,nav,section,footer,.d1,.d2{
+    border:1px solid black;
+}
+.l-aside,.mid-sec,.r-aside{
+    display: inline-block;
+    /* border:1px solid black;    */
+}
+.l-aside,.r-aside{
+    vertical-align: top;
+    padding:139px 0px;
+    width:20%;
+    /* background-color: pink; */
+}
+.d1,.d2{
+    padding:60px 0px;
+    margin: 5px;
+    /* background-color: rgb(209, 163, 252); */
+}
+header,footer{
+    padding:45px;
+    /* background-color: aqua; */
+}
+.mid-sec{
+    border:1px solid black;
+    width:59.2%;
+    margin:0px 
+    /* background-color: rgb(153, 48, 250); */
+}
+nav{
+    padding:41px; 
+    /* background-color: rgb(243, 133, 133); */
+}
+/* .l-aside{
+    margin-right: -4px;
+} */

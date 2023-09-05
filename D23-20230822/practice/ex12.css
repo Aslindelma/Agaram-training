@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: darkgray;
+}
+.main{
+    padding:10px 10px 5px 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+nav{
+    border:1px solid darkgray;
+    padding: 10px;
+    text-align: center;
+    background: palevioletred;
+}
+.sec1{
+    padding: 25px 30px 10px 30px;
+}
+.home,.team,.pro,.con{
+    display: inline-block;
+    padding:10px 70px;
+    background: palevioletred;
+}
+input{
+    background-color: white;
+    height:25px;
+}
+button{
+    height:25px;
+    width:40px;
+    background: black;
+    color: white;
+}
+.sec2{
+    border:1px solid darkgray;
+}
+.box1{
+    width:77.2%;
+    background: white;
+    padding:15px 0px;
+}
+.box1 h1,.box1 h2,.box1 p,.box1 i{
+    background: white;
+}
+.box1 h1{
+    color: black;
+}
+.box2{
+    /* width:15%; */
+    vertical-align: top;
+    padding:10px 20px 218px 25px;
+    background: palevioletred;
+}
+.box1,.box2{
+    display:inline-block;
+    border: 1px solid darkgray;
+}
+.box2 h1,.box2 i,.box2 ul,.box2 li,.box2 a{
+    background-color: palevioletred;
+}
+footer{
+    border: 1px solid darkgray;
+    background: white;
+    padding: 20px;
+}
+.sec2{
+    margin:5px 0px 5px 0px;
+}

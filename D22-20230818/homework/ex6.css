@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align:center;
+}
+header{
+    background-color: rgb(202, 123, 5);
+    padding:40px;
+}
+nav{
+    background-color: rgb(7, 7, 148);
+    padding: 225px 100px;
+    /* width:30%; */
+    margin-left:-10px;
+}
+article{
+    background-color: rgb(3, 83, 3);
+    padding: 225px 505px;
+    /* width:69%; */
+    margin:0px -10px 0px -4px;
+}
+footer{
+    background-color: brown;
+    padding: 40px;
+}
+nav,article{
+    display: inline-block;
+}

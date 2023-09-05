@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border:1px solid black;
+}
+.sec-art,.aside{
+    display: inline-block;
+    width: 60%;
+    margin-left: 4px;
+}
+.aside{
+    border:1px solid black;
+    vertical-align: top;
+    text-align: center;
+    padding:188px 0;
+    /* margin:4px 2px 2px 0px; */
+    width:38.5%;
+}
+.sec,.art{
+    border:1px solid black;
+    padding:88px 0;
+    /* width:60%; */
+    /* margin: 4px; */
+    text-align: center;
+}
+.head,.nav,.foot{
+    border:1px solid black;
+    padding:30px;
+    text-align: center;
+    margin: 4px;
+}
+.nav{
+    margin-bottom: 2px;
+}
+.foot{
+    margin-top: 2px;
+}
+.art{
+    margin-top: 2px;
+}

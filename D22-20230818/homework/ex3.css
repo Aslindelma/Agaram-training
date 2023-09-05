@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+header,footer,nav,aside,.main,.aside,.sec{
+    background-color: rgba(62, 243, 228, 0.952);
+    margin:5px;
+}
+.main,.as-sec{
+    display: inline-block;
+}
+.main{
+    vertical-align: top;
+    padding: 111px 297px;
+    margin:0;
+}
+.aside{
+    padding:50px 297px;
+    margin:0px 0px 3px 0px;
+}
+.sec{
+    padding:50px 297px;
+    margin:3px 0px 0px 0px;
+}
+header,footer{
+    padding:45px 0px;
+}
+nav,aside{
+    padding: 27px 0px;
+}

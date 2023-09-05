@@ -1,0 +1,34 @@
+*{
+    background-color: rgb(150, 155, 155);
+    padding:0px 20px 0px 20px;
+    margin:0;
+    text-align: center;
+    color: antiquewhite;
+}
+.sec1,.sec2{
+    display: inline-block;
+}
+nav{
+    background: gray;
+    padding: 30px;
+}
+.intro{
+    background: rgb(88, 83, 83);
+    padding: 55px;
+    margin:10px;
+}
+.sec1{
+    background: black;
+    padding: 116px 356px;
+    margin:10px 10px 10px 0px;
+}
+.sec2{
+    background: rgb(124, 121, 121);
+    padding: 116px 126px;
+    margin:10px 0px 10px 5px;
+}
+footer{
+    background: rgb(88, 83, 83);
+    padding: 65px;
+    margin:10px 10px 0px 10px;
+}
