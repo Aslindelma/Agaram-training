@@ -1,0 +1,30 @@
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    color:rgb(119, 4, 29)
+}
+h2{
+    color: rgb(2, 2, 94);
+}
+
+label,th{
+    font-weight:bold;
+    color:rgb(5, 51, 1);
+    font-size: 16px;
+
+}
+input,textarea,select{
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding:5px;
+}
+body{
+    
+    background-color: sandybrown;
+    border:8px double firebrick;
+    padding: 10px;
+}
+div select{
+    text-align: center;
+}

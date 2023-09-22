@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+img{
+    float:right;
+    height: 100px;
+    width: 100px;
+}

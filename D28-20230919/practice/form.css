@@ -1,0 +1,27 @@
+#home{
+    display: block;
+}
+/* #loginpage{
+    display:none;
+}
+#login{
+    display: none;
+}
+#registration{
+    display: none;
+} */
+#frontpage{
+    display: block;
+}
+/* #list{
+    display:none;
+}
+#list td{
+    text-align: center;
+}
+#registered{
+    display: none;
+} */
+#list{
+    display: none;
+}
