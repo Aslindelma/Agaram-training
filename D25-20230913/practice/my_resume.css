@@ -2,18 +2,24 @@
     text-align: center;
     text-transform: uppercase;
 } */
+*{
+    padding: 0;
+    margin: 0;
+}
 .l-box{
     background-color: aquamarine;
-    /* padding: 100px 50px ; */
+    padding: 25px 5px ;
     text-align: center;
+    vertical-align: top;
 }
 .l-box,.r-box{
     display: inline-block;
 }
 .r-box{
     padding-left: 10px;
+    padding-bottom: 20px;
     /* background-color: aqua; */
-    width: 76%;
+    width: 69%;
     margin-left:5px ;
 }
 img{
@@ -26,9 +32,12 @@ img{
 table{
     text-align: center;
 }
-/* body{
-    line-height: 44px;
+body{
+    line-height: 36px;
 }
 ul{
-    margin-left: 20px;
-} */
+    margin-left: 25px;
+}
+tr{
+    padding: 5px;
+}
