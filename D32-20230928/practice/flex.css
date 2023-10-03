@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 30px;
+    
+}
+.c1,.c2,.c3,.c4{
+    width: 20%;
+    border: 2px solid black;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: crimson;
+    background-color: aquamarine;
+}
+img{
+    border-radius: 10px;
+}

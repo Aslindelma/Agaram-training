@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+    height: 50%;
+    margin: 150px 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+    background-color: rgb(235, 233, 233);
+}
+body{
+    background : aquamarine;
+}
+#frontpage{
+    padding: 120px;
+}
+#frontpage body{
+    background-color: aquamarine;
+}

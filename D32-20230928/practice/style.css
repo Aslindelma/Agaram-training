@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 1px solid yellow;
+    margin: 10px;
+    padding: 50px;
+    /* position: relative; */
+}
+.box{
+    background-color:chocolate;
+}
+.section{
+    height: 300px;
+    width: 300px;
+    background-color:green;
+}
+body{
+    background-color: aquamarine;
+    position: relative;
+}
+p{
+    margin: 5px;
+    background-color: white;
+    height: 20px;
+    width: 100px;
+}
+.box ul{
+    border: 1px solid green;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.section ul{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+li{
+    display: inline-block;
+    background-color:aliceblue;
+    border: 1px solid blue;
+    /* margin: 10px; */
+    padding: 10px;
+}

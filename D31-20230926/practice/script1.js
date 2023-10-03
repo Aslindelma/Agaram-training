@@ -13,7 +13,6 @@ var db = firebase.database()
 var dataRef = db.ref("registeredusers")
 
 
-
 function userlogin() {
 
     let user_detail = document.getElementById("Email").value
