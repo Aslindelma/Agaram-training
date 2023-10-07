@@ -1,0 +1,47 @@
+.nav{
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+img{
+    height: 75px;
+    border-radius: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.l-box{
+    background-color: blueviolet;
+    display: inline-block;
+    color: aliceblue;
+    width: 35%;
+    height: 100px;
+    
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+.r-box{
+    display: inline-block;
+    background-color: aqua;
+    width: 65%;
+}
+.container-fluid{
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.l-main{
+    background-color: brown;
+    height: 700%;
+    width: 20%;
+}
+
+
+

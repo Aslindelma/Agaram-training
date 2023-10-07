@@ -121,7 +121,7 @@ function del(a) {
             let data = snapshot.val();
             // console.log(data);
             let newdata = []
-            for (i=0; i<data.length; i++) {
+            for (let i=0; i<data.length; i++) {
                 if(data[i].name != a) {
                     newdata.push(data[i])
                 }

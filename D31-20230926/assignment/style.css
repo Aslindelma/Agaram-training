@@ -4,7 +4,7 @@ div{
     padding: 30px;
     height: 50%;
     margin: 150px 400px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
 }
 input{
@@ -17,6 +17,6 @@ body{
 #frontpage{
     padding: 120px;
 }
-#frontpage body{
-    background-color: aquamarine;
-}
+/* #frontpage body{
+    background-image: url("");
+} */
