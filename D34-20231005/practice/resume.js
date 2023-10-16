@@ -76,30 +76,30 @@ function handleMulData2(obj) {
 function display() {
     document.getElementById("display_data").innerHTML = JSON.stringify(resumeDetails, undefined, 2);
 }
-function handleMulData1(p_key) {
+function handleMulData1(p_key,id) {
     if (!resumeDetails[p_key]) {
         resumeDetails[p_key] = []
     }
 
     resumeDetails[p_key].push(each_tmp)
     // console.log(each_tmp)
-    displaymularray(resumeDetails[p_key],p_key)
+    displaymularray(p_key,id)
     // console.log(resumeDetails[p_key])
     // console.log(p_key)
     let each = Object.keys(each_tmp)
     // console.log(keys)
     for(let i=0;i<each.length;i++){
         console.log(each[i])
-        // document.getElementById(each[i]).value=""
+        document.getElementById(each[i]).value=""
     }
     
     each_tmp = {}
     display()
 }
 
-function displaymularray(p_key,p_data){
-    
-    console.log(p_key)
+function displaymularray(pkey,id){
+    let p_key=resumeDetails[pkey]
+    // console.log(p_key)
     
     // let details=p_key
     // console.log(p_key)
@@ -111,27 +111,27 @@ function displaymularray(p_key,p_data){
             table_data = table_data + `<td>${p_key[i][key]}</td>`
             // console.log(p_key[i][key])
         }
-        tab_data = tab_data + `<tr>`+table_data+`<td><button type="button" onclick="tableDel('${[i]}','${p_data}')">&times;</button></td>`+`</tr>`
+        tab_data = tab_data + `<tr>`+table_data+`<td><button type="button" onclick="tableDel('${[i]}','${id}','${pkey}')">&times;</button></td>`+`</tr>`
         // console.log(p_key[i])
     }
-    document.getElementById(p_data).innerHTML = tab_data
+    document.getElementById(id).innerHTML = tab_data
     // console.log(tab_data)
 }
-function tableDel(index,p_data){
+function tableDel(index,id,p_key){
     // console.log(index)
-    let data = resumeDetails[p_data]
+    let data = resumeDetails[p_key]
     // console.log(data)
     let add_data = []
     for(let i=0;i<data.length;i++){
         if( i != index){
             // console.log(data[i])
-            // add_data.push(data[i])
+            add_data.push(data[i])  
 
         }
         
     }
-    resumeDetails[p_data] = add_data
-    displaymularray(resumeDetails[p_data],p_data)
+    resumeDetails[p_key] = add_data
+    displaymularray(p_key,id)
     // console.log(add_data)
     display()
 }
@@ -243,11 +243,20 @@ function show_resume(a){
             }
             $('#languages_known').html(lan)
 
+            let hobby = user_detail.Hobbies
+            // console.log(hobby)
+            let hob =""
+            for( let i=0;i<hobby.length;i++){
+                hob = hob + `<ul>${hobby[i]}</ul>`
+            }
+            $('#hobbies').html(hob)
+
             let per_detail = user_detail.personaldetail
             // console.log(per_detail)
             $('#father_name').html(per_detail.father_name)
             $('#father_occupation').html(per_detail.father_occupation)
             $('#mother_name').html(per_detail.mother_name)
+            $('#address').html(per_detail.address)
             $('#dob').html(per_detail.dob)
             $('#gender').html(per_detail.gender)
 
@@ -262,6 +271,28 @@ function show_resume(a){
                 <td>${edu_details[i].ins_percentage}</td></tr>`
             }
             $('#edu_table').html(edu)
+
+            let pro_details = user_detail.project
+            // console.log(pro_details)
+            let pro = ""
+            for(i=0;i<pro_details.length;i++){
+                pro = pro + `<tr>
+                <td>${pro_details[i].pro_name}</td>
+                <td>${pro_details[i].pro_description}</td>
+                <td>${pro_details[i].pro_year}</td></tr>`
+            }
+            $('#pro_table').html(pro)
+
+            let exp_details = user_detail.experience
+            // console.log(exp_details)
+            let exp = ""
+            for(i=0;i<exp_details.length;i++){
+                exp = exp + `<tr>
+                <td>${exp_details[i].company_name}</td>
+                <td>${exp_details[i].role}</td>
+                <td>${exp_details[i].exp_months}</td></tr>`
+            }
+            $('#exp_table').html(exp)
         },
         error:function(error){
             console.log(error)

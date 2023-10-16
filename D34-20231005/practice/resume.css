@@ -1,5 +1,8 @@
-#para, #para1{
+#para, #para1,#para2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+#resume{
+    background-image: url();
 }

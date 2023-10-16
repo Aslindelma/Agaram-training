@@ -53,19 +53,19 @@
       <input type="number" id="ins_percentage" name="ins_percentage" class="form-control" placeholder="Percentage" onkeyup="handleMulData2(this)">
     </div>
     <div class="col-sm-3">
-      <button type="button"  onclick="handleMulData1('education')" class="btn btn-success">Add</button>
+      <button type="button"  onclick="handleMulData1('education','educational')" class="btn btn-success">Add</button>
     </div>
     <div>
-      <table class="table table-success table-striped">
+      <table class="table table-dark table-striped">
         <thead>
           <tr>
-            <td>Institute</td>
-            <td>Level</td>
-            <td>Year</td>
-            <td>Percentage</td>
-            <td>Delete</td>
+            <th>Institute</th>
+            <th>Level</th>
+            <th>Year</th>
+            <th>Percentage</th>
+            <th>Delete</th>
           </tr>
-          <tbody id="education">
+          <tbody id="educational">
 
           </tbody>
         </thead>
@@ -80,26 +80,26 @@
     <div class="col-2">
       <input type="text" id="pro_description" name="pro_description" class="form-control" placeholder="Project Description" onkeyup="handleMulData2(this)">
     </div>
-    <div class="col-2">
+    <!-- <div class="col-2">
       <input type="text" id="pro_language" name="pro_language" class="form-control" placeholder="Language Used" onkeyup="handleMulData2(this)">
-    </div>
+    </div> -->
     <div class="col-2">
       <input type="number" id="pro_year" name="pro_year" class="form-control" placeholder="Year" onkeyup="handleMulData2(this)">
     </div>
     <div class="col-sm-3">
-      <button type="button"  onclick="handleMulData1('project')" class="btn btn-success">Add</button>
+      <button type="button"  onclick="handleMulData1('project','projectid')" class="btn btn-success">Add</button>
     </div>
     <div class="mb-2 row">
       <table class="table table-success table-striped">
         <thead>
           <tr>
-            <td>Project Name</td>
-            <td>Description</td>
-            <td>Language used</td>
-            <td>Year</td>
-            <td>Delete</td>
+            <th>Project Name</th>
+            <th>Description</th>
+            <!-- <th>Language used</th> -->
+            <th>Year</th>
+            <th>Delete</th>
           </tr>
-          <tbody id="project">
+          <tbody id="projectid">
 
           </tbody>
         </thead>
@@ -114,32 +114,32 @@
     <div class="col-2">
       <input type="text" id="role" name="role" class="form-control" placeholder="Role" onkeyup="handleMulData2(this)">
     </div>
-    <div class="col-2">
+    <!-- <div class="col-2">
       <input type="text" id="" name="description" class="form-control" placeholder="Description" onkeyup="handleMulData2(this)">
-    </div>
+    </div> -->
     <div class="col-2">
       <input type="number" id="exp_months" name="exp_months" class="form-control" placeholder="Year" onkeyup="handleMulData2(this)">
     </div>
     <div class="col-sm-3">
-      <button type="button"  onclick="handleMulData1('experience')" class="btn btn-success">Add</button>
+      <button type="button"  onclick="handleMulData1('experience','experienceid')" class="btn btn-success">Add</button>
     </div>
     <div class="mb-2 row">
       <table class="table table-success table-striped">
         <thead>
           <tr>
-            <td>Company Name</td>
-            <td>Role</td>
-            <td>Year</td>
-            <td>Description</td>
-            <td>Delete</td>
+            <th>Company Name</th>
+            <th>Role</th>
+            <th>Year</th>
+            <!-- <th>Description</th> -->
+            <th>Delete</th>
           </tr>
-          <tbody id="experience">
+          <tbody id="experienceid">
 
           </tbody>
         </thead>
       </table>
     </div>
-  </div>
+  </div> 
   <h3>Skills</h3>
   <div class="mb-3 row">
     <label class="col-sm-2 col-form-label">Skills</label>
@@ -162,6 +162,18 @@
     </div>
     <div class="col-sm-3">
       <button type="button"  onclick="handleMulData('Languages','lan_name','para1')" class="btn btn-success">Add</button>
+    </div>
+  </div>
+
+  <h3>Hobbies</h3>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Hobbies</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="hobbies"  >
+      <p id="para2"></p>
+    </div>
+    <div class="col-sm-3">
+      <button type="button"  onclick="handleMulData('Hobbies','hobbies','para2')" class="btn btn-success">Add</button>
     </div>
   </div>
   
