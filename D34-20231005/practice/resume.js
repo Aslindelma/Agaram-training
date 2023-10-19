@@ -175,6 +175,7 @@ function getresume(){
                 <td>${element.data[i].user}</td>
                 <td><button type="button" onclick="del('${element.data[i].id}')">Delete</button></td>
                 <td><a href="single.html?id=${element.data[i].id}">link</a></td>
+                <td><a href="file:///home/delma/agaram/D34-20231005/practice/resumetem.html?id=${element.data[i].id}">link</a><td>
                 </tr>`
             }
             $('#tabledata').html(ele)
