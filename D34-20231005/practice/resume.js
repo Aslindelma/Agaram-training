@@ -174,8 +174,9 @@ function getresume(){
                 <td>${element.data[i].id}</td>
                 <td>${element.data[i].user}</td>
                 <td><button type="button" onclick="del('${element.data[i].id}')">Delete</button></td>
-                <td><a href="single.html?id=${element.data[i].id}">link</a></td>
-                <td><a href="file:///home/delma/agaram/D34-20231005/practice/resumetem.html?id=${element.data[i].id}">link</a><td>
+                <td><a href="single.html?id=${element.data[i].id}">link1</a></td>
+                <td><a href="file:///home/delma/agaram/D34-20231005/practice/resumetem.html?id=${element.data[i].id}">link2</a><td>
+                <td><a href="file:///home/delma/agaram/D34-20231005/practice/new_tem.html?id=${element.data[i].id}">link3</a><td>
                 </tr>`
             }
             $('#tabledata').html(ele)
@@ -223,6 +224,7 @@ function show_resume(a){
             // console.log(user_detail)
             // console.log(user_detail.name)
             $('#name').html(user_detail.name)
+            $('#designation').html(user_detail.designation)
             $('#email').html(user_detail.email)
             $('#mobile_no').html(user_detail.mobile)
             $('#objective').html(user_detail.objective)
