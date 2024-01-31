@@ -3,9 +3,21 @@ import AddTodo from './form';
 import {Link} from "react-router-dom";
 import Header from '../Header';
 import axios from 'axios';
+import {useEffect} from 'react';
 
 function User(){
+    let [timer,setTimer] = useState(0)
+    let [isTimerStart,setTimerStart] = useState(true)
+    useEffect(()=>{
+        if(isTimerStart){
+        setTimer(timer+1)
+        }
+    },[timer,isTimerStart])
+
     let [users,setUsers] = useState(["delma","sangee","shali"])
+    useEffect(()=>{
+        getApiData();
+      },[])
     const getApiData = ()=>{
         // axios({
         //     method: 'get',
@@ -15,23 +27,31 @@ function User(){
         //       console.log(response.data)
         //     });
         axios({
-            method:'post',
+            method:'get',
             url:'https://jsonplaceholder.typicode.com/posts',
-            data:{
-                "userId": 1,
-                "id": 1,
-                "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-                "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-              },
+            // data:{
+            //     "userId": 1,
+            //     "id": 1,
+            //     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+            //     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+            //   },
         })
         .then(function(response){
-            console.log(response)
+            console.log(response.data)
         });
     }
 
     return(
         <>
         <Header/>
+
+        <code>{timer}</code>
+        <button type="button" onClick={()=>setTimerStart(!isTimerStart)}>{setTimerStart?'start':'stop'}</button>
+        <button type="button" onClick={async()=>{
+            await setTimerStart(false)
+            setTimer(0)
+        }}>Reset</button>
+
         <table>
             <tr>
                 <th>Order</th>

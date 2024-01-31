@@ -11,13 +11,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
+import {useEffect} from 'react';
+import Submit from './miniProject';
+import Rechart from './recharts';
 
 function App() {
   let [isLogged,setIsLogged] = useState({
     log:false,
     email:"delma@gmail.com"
   });
+  
 
   const router = createBrowserRouter([
     {
@@ -32,10 +35,15 @@ function App() {
       path: "/home",
       element: <User/>,
     },
+    {
+      path: "/rechart",
+      element: <Rechart/>,
+    },
   ]);
   return (
     <div className="App">
       <RouterProvider router={router}/>
+      {/* <Submit/> */}
         
       
     </div>

@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux"
 import { updateLoginSuccess } from "../../Reducers/userSlice";
 
 function Login(){
-
+      
     const count = useSelector ((state)=>state.counter.value)
 
     const name = useSelector ((state)=>state.user.loginSuccessData)
@@ -27,11 +27,10 @@ function Login(){
         console.log(response.data)
         navigate('/homepage')
         
-        
-        
     }
     return(
         <>
+        
         {JSON.stringify(loginData)}
         <form>
         <label>Email:</label>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {%if name == 'delma'%}
+    <h1>welcome</h1>
+    {% else %}
+    <h1>logout</h1>
+    {% endif %}
+
+    {%for item in userlist%}
+    <li><a href="/user/{{item}}">{{item}}</a></li>
+    {%endfor%}
+    
+</body>
+
+</html>
